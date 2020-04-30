@@ -2,7 +2,7 @@
   "name": "pg-live-select",
   "version": "1.0.3",
   "description": "Live updating PostgreSQL SELECT statements",
-  "main": "index.js",
+  "main": "lib/LivePg.js",
   "scripts": {
     "test": "CONN=\"postgres://meteor:meteor@127.0.0.1/meteor_test\" CHANNEL=\"package_test\" DEBUG=0 STATS=0 nodeunit test/index.js"
   },
@@ -21,9 +21,10 @@
     "select"
   ],
   "dependencies": {
-    "lodash": "^3.8.0",
+    "lodash": "^4.17.15",
     "murmurhash-js": "^1.0.0",
-    "pg": "^4.3.0"
+    "pg": "^8.0.3",
+    "ejson": "^2.2.0"
   },
   "devDependencies": {
     "babel": "^5.2.17",
